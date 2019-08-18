@@ -6,4 +6,4 @@ def is_divisible(num):
     for n in num_str:
         num_sum += int(n)
 
-    print("is divisible") if num % num_sum == 0 else print("isn't divisible")
+    return True if num % num_sum == 0 else False

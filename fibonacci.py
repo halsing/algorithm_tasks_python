@@ -1,7 +1,7 @@
 def fibonacci(n):
     list = []
     for x in range(n+1):
-        if x  <= 1:
+        if x <= 1:
             list.append(x)
         else:
             list.append(list[-2]+list[-1])
@@ -18,6 +18,6 @@ def fibonacci_check(n):
         list = fibonacci(int(n/4))
 
     if n in list:
-        print(f"Liczba {n} jest w ciągu fibonacciego")
+        return f"Liczba {n} jest w ciągu fibonacciego"
     else:
-        print(f"Liczby {n} nie jest w ciągu fibonacciego")
+        return f"Liczby {n} nie jest w ciągu fibonacciego"

@@ -15,6 +15,4 @@ def is_super_prime(n):
             sum += int(s)
         prime = False if is_prime(sum) is False else True
 
-    print("is Prime") if prime else print("isn't Prime")
-
-is_super_prime(19)
+    return prime

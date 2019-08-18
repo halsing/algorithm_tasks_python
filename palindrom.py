@@ -8,7 +8,4 @@ def is_palindrom(text):
 
     inverted_text = first_text[::-1]
 
-    if first_text == inverted_text:
-        print("This text is palindrom")
-    else:
-        print("This text is not a palindrom")
+    return True if first_text == inverted_text else False

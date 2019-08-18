@@ -7,4 +7,5 @@ def is_prime(n):
         elif num % i == 0:
             prime = False
 
-    print("is Prime") if prime else print("isn't Prime")
+    return True if prime else False
+
