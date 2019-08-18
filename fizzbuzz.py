@@ -13,8 +13,6 @@ def fizz_buzz(n):
         elif x % 3 == 0:
             print(x,"Fizz")
 
-def fizz_buzz_second(n):
+def fizz_buzz_one_line(n):
     for x in range(1,n+1):
         print(x, "FizzBuzz") if x % 15 == 0 else print(x,"Buzz") if x % 5 == 0 else print(x,"Fizz") if x % 3 == 0 else None
-
-fizz_buzz_second(100)
