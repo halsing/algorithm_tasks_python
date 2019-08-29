@@ -2,14 +2,14 @@ def reszta(rest, ):
     rest_dict = {}
     my_cash = float(rest)
     denomination_list = [
-        0.5, 1, 2 ,5, 10, 20, 50,
+        0.5, 1, 2, 5, 10, 20, 50,
         100, 200, 500, 0.1, 0.2,
         0.001, 0.002, 0.005
     ]
 
     try:
         denomination_list.sort()
-    except:
+    except TypeError:
         raise Exception("denomination_list isn't a list")
 
     for i, cash in enumerate(denomination_list, 1):

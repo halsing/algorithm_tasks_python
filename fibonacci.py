@@ -1,20 +1,20 @@
 def fibonacci(n):
-    list = []
+    lists = []
     for x in range(n):
         if x <= 1:
-            list.append(x)
+            lists.append(x)
         else:
-            list.append(list[-2]+list[-1])
+            lists.append(lists[-2]+lists[-1])
 
-    return list
+    return lists
 
 
 def fibonacci_check(n):
     if n < 10:
-        list = fibonacci(n+3)
+        lists = fibonacci(n+3)
     elif n < 45:
-        list = fibonacci(int(n/2))
+        lists = fibonacci(int(n/2))
     else:
-        list = fibonacci(int(n/4))
+        lists = fibonacci(int(n/4))
 
-    return True if n in list else False
+    return True if n in lists else False

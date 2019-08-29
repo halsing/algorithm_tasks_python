@@ -1,18 +1,21 @@
-def is_prime(n):
-    for i in range(n):
-        if i <= 1 or n % i != 0:
-            pass
-        elif n % i == 0:
-            return False
+from is_prime import is_prime_recurent as ipr
+
 
 def is_super_prime(n):
     str_num = str(n)
-    prime = False if is_prime(n) is False else True
+    prime = ipr(n)
 
     if prime:
-        sum = 0
+        sums = 0
         for s in str_num:
-            sum += int(s)
-        prime = False if is_prime(sum) is False else True
+            sums += int(s)
+        prime = ipr(sums)
 
     return prime
+
+
+def is_super_prime_small(n):
+    return True if ipr(n) and ipr(sum([int(s) for s in str(n)])) else False
+
+
+f = lambda n: True if ipr(n) and ipr(sum([int(s) for s in str(n)])) else False

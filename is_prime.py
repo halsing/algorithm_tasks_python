@@ -6,6 +6,19 @@ def is_prime(n):
             pass
         elif num % i == 0:
             prime = False
+            break
 
-    return True if prime else False
+    return prime
 
+
+def is_prime_recurent(n, current=2):
+    if n <= 1 or n == current:
+        return True
+    elif n % current:
+        return is_prime_recurent(n, current + 1)
+    else:
+        return False
+
+
+def is_prime_line(n, c=2):
+    return True if n <= 1 or n == c else is_prime_line(n ,c+1) if n % c else False

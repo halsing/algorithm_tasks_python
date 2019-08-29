@@ -1,5 +1,5 @@
 def pascal_triangle(n):
-    pascal_list=[]
+    pascal_list = []
 
     for i in range(n):
         if i == 0:
@@ -8,7 +8,7 @@ def pascal_triangle(n):
             new_list = []
 
             for x in range(i):
-                if x ==0 or x == i-1:
+                if x == 0 or x == i-1:
                     new_list.append(1)
                 else:
                     last_pascal = pascal_list[-1]
@@ -22,7 +22,7 @@ def pascal_triangle(n):
 
 def pascal_print(n):
     pascal_list = pascal_triangle(n)
-    for list in pascal_list:
-        for i in list:
+    for lists in pascal_list:
+        for i in lists:
             print(i, end=" ")
         print("")

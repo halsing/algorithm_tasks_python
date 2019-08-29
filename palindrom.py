@@ -1,7 +1,6 @@
 def is_palindrom(text):
     text_list = text.split(" ")
     first_text = ""
-    inverted_text = ""
 
     for word in text_list:
         first_text += word
