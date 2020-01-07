@@ -1,1 +1,2 @@
-# algorithm_tasks_python
+# Just a simple tasks in python
+
