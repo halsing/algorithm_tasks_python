@@ -1,4 +1,12 @@
+"""
+Fibonacci module can return list of fibonacci number
+or check if number is in fibonacci list
+"""
+
 def fibonacci(n):
+    """
+    Return list of fibonacci numbers
+    """
     lists = []
     for x in range(n):
         if x <= 1:
@@ -10,6 +18,9 @@ def fibonacci(n):
 
 
 def fibonacci_check(n):
+    """
+    Check if n is in fibonacci list
+    """
     if n < 10:
         lists = fibonacci(n+3)
     elif n < 45:

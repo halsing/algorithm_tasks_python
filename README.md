@@ -1,2 +1,2 @@
-# Just a simple tasks in python
+# Just a simple algorithms tasks in python
 

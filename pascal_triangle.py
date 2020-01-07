@@ -1,4 +1,8 @@
-def pascal_triangle(n):
+def pascal_triangle(n: int):
+    """
+    Function return list of lists to build pascal triangle
+    n - number of pascal triangle steps
+    """
     pascal_list = []
 
     for i in range(n):
@@ -20,7 +24,11 @@ def pascal_triangle(n):
     return pascal_list
 
 
-def pascal_print(n):
+def pascal_print(n: int) -> None:
+    """
+    Function return list of lists to build pascal triangle
+    n - number of pascal triangle steps
+    """
     pascal_list = pascal_triangle(n)
     for lists in pascal_list:
         for i in lists:

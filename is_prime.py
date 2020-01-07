@@ -1,3 +1,7 @@
+"""
+Module contain a few different functions to check if number is prime
+"""
+
 def is_prime(n):
     num = n
     prime = True

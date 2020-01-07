@@ -1,3 +1,6 @@
+"""
+Number is super prime when is prime and sum of it's number is prime
+"""
 from is_prime import is_prime_recurent as ipr
 
 

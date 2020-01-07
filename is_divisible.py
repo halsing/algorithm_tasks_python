@@ -1,4 +1,8 @@
-#liczba podzielna = liczba dzieli się przez sumę swoich liczb
+"""
+Number is divisible when it divides by sum of it's numbers
+"""
+
+
 def is_divisible(num):
     num_str = str(num)
     num_sum = 0
